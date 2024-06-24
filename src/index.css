@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.hero_bg{
+  background-image: url("../public/bg-image-1.jpg");
+  height: 100vh; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+}
