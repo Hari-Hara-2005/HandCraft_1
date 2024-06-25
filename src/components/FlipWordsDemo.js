@@ -3,7 +3,7 @@ import { FlipWords } from "./ui/flip-words.tsx";
 import { Box, Typography } from "@mui/material";
 
 export function FlipWordsDemo() {
-    const words = ["Beautiful", "Modern", "Letters Frame", "Letter keychain", "MemorableFrame", "Greeting cards", "Explosion box", "Wall hanging ", "Silk thread jewellery's", "Mini album"];
+    const words = ["Beautiful", "Modern", "Letters Frame", "Letter keychain", "MemorableFrame", "Greeting cards", "Explosion box", "Wall hanging ", "Silk jewellery's", "Mini album"];
 
     return (
         <Typography sx={{

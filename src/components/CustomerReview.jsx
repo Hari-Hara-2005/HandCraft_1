@@ -38,23 +38,23 @@ const CustomerReview = () => {
             }}>
                 {duplicateClients.map((review, index) => (
                     <Box key={index} sx={{
-                        width: ['25rem','25rem','35rem',],
+                        width: ['20rem', '20rem', '35rem',],
                         bgcolor: 'white',
                         borderRadius: '24px',
-                        px:['1rem', '3rem'],
-                        py: '1rem',
+                        px: ['1rem', '3rem'],
+                        py: '2rem',
                         boxShadow: 3
                     }}>
-                        <Box sx={{ display: 'flex',justifyContent:'center', my: ['0rem','1.5rem'] }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center', my: ['0rem', '0rem', '1rem'] }}>
                             <img src={review.img} alt="customer" style={{ width: '5rem', height: '5rem', borderRadius: '100%' }} />
                         </Box>
-                        <Box sx={{ textAlign:'center',mt:'5px'}}>
-                                <Typography>{review.name}</Typography>
-                            </Box>
-                        <Box>
-                            <img src="/double-quotes.svg" alt="quotes" className='w-fit h-fit' />
+                        <Box sx={{ textAlign: 'center', mt: ['5px', '3px', '0px'] }}>
+                            <Typography>{review.name}</Typography>
                         </Box>
-                        <Typography sx={{ mt: ['0.5rem','1rem'], ml: 0.8, textWrap: 'wrap' }}>
+                        <Box>
+                            <img src="/double-quotes.svg" alt="quotes" className='w-fit h-fit ' />
+                        </Box>
+                        <Typography sx={{ mt: ['0.5rem'], ml: 0.5, textWrap: 'wrap' }}>
                             {review.description}
                         </Typography>
                     </Box>

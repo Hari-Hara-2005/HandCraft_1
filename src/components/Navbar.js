@@ -109,8 +109,8 @@ export default function Navbar(props) {
                     <Toolbar>
                         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", mx: { sm: 2, md: 6 }, my: { sm: 0.5, md: 0.5 } }}>
                             <Box sx={{ my: 0 }}>
-                                <ImageListItem sx={{ width: { xs: 58, sm: 50 }, height: { xs: 40, sm: 50 } }}>
-                                    <Box component='img' src="/logoh.png" sx={{ width: ['3rem', '5rem', '7rem'], height: ['3rem', '5rem', '6rem'], }} alt='logo' />
+                                <ImageListItem sx={{ }}>
+                                    <Box component='img' src="/logoh.png" sx={{ width: ['4rem', '5rem', '6rem'], height: ['4rem', '5rem', '6rem'], }} alt='logo' />
                                 </ImageListItem>
                             </Box>
                             <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
