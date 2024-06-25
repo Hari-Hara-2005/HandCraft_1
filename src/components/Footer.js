@@ -12,8 +12,8 @@ const Footer = () => {
             data-aos-duration="3000" sx={{ mt: 10 }}>
             {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FF6B6B" fillOpacity="1" d="M0,32L80,53.3C160,75,320,117,480,112C640,107,800,53,960,42.7C1120,32,1280,64,1360,80L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
             <Box sx={{ display: 'flex', justifyContent: 'center', my: ['0rem', '1.5rem'], }}>
-                <Box sx={{ bgcolor: '#FF6B6B', width: '9rem',height:'9rem', display: 'flex',alignItems:'center', justifyContent: 'center', borderRadius:'100%'}}>
-                    <img src='/logoh.png' alt="customer" style={{ width: '10.5rem', height: '10.5rem', borderRadius: '100%' }} />
+                <Box sx={{ bgcolor: '#FF6B6B', width: ['7rem', '7rem', '9rem'], height: ['7rem', '7rem', '9rem'], display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '100%' }}>
+                    <Box component='img' src='/logoh.png' alt="customer" sx={{ width: ['8rem', '8rem', '10.5rem'], height: ['8rem', '8rem', '10.5rem'], borderRadius: '100%' }} />
                 </Box>
             </Box>
             <Box sx={{ backgroundColor: '#FF6B6B', mt: { xs: -8, sm: -12, md: -12 }, pb: 2 }}>

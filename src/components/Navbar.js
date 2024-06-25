@@ -67,7 +67,7 @@ export default function Navbar(props) {
     };
 
     const drawer = (
-        <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+        <Box sx={{ height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
             <Box onClick={handleDrawerToggle} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <IconButton sx={{ my: 1, mx: 1 }}>
                     <CloseIcon sx={{ color: 'white' }} />
@@ -110,7 +110,7 @@ export default function Navbar(props) {
                         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%", mx: { sm: 2, md: 6 }, my: { sm: 0.5, md: 0.5 } }}>
                             <Box sx={{ my: 0 }}>
                                 <ImageListItem sx={{ width: { xs: 58, sm: 50 }, height: { xs: 40, sm: 50 } }}>
-                                    <img src="/logoh.png" style={{ width: '7rem', height: '6rem',}} alt='logo' />
+                                    <Box component='img' src="/logoh.png" sx={{ width: ['3rem', '5rem', '7rem'], height: ['3rem', '5rem', '6rem'], }} alt='logo' />
                                 </ImageListItem>
                             </Box>
                             <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
