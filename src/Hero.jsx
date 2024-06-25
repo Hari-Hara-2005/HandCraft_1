@@ -16,14 +16,14 @@ const Hero = () => {
       <Box className="hero_bg" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <Box>
           <Typography sx={{
-            fontSize: ['2rem', '4.5rem',],
+            fontSize: ['2.4rem', '4.5rem',],
             fontFamily: "cursive",
             fontWeight: '600',
             color: '#543310',
             textAlign: 'center'
           }}>Maha's Lettering</Typography>
 
-          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5, color: 'white', mb: '5rem' }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
+          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5,px:1, color: 'white', mb: '5rem' }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <FlipWordsDemo />
           </Box>
@@ -315,7 +315,7 @@ const Hero = () => {
         {/* Customer Review Section */}
         <Box >
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-            {/* <Title>Read what our customers say</Title> */}
+            <Title>Read our customers say</Title>
           </Box>
           <CustomerReview />
         </Box>
