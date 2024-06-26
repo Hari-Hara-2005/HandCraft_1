@@ -12,9 +12,9 @@ export function FlipWordsDemo() {
             color: 'white',
             bgcolor: 'transparent',
             textAlign: 'center',
-            display: 'flex'
+            display: 'flex',
+            color: '#282828'
         }}>
-            We Provide&nbsp;
             <FlipWords words={words} />
         </Typography>
     );

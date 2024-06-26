@@ -9,16 +9,36 @@ import CancelIcon from '@mui/icons-material/Cancel';
 export default function Faq() {
     const faqs = [
         {
-            que: "Crafting is the art of turning ordinary objects into extraordinary things",
-            ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ipsa aspernatur ration"
+            que: "How can I place an order?",
+            ans: 'Click the "Buy" button next to your desired item to start your order on WhatsApp.'
         },
         {
-            que: "Crafting is the art of turning ordinary objects into extraordinary things",
-            ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ipsa aspernatur ration"
+            que: "How do I complete my purchase on WhatsApp?",
+            ans: " Message us on WhatsApp with your order details. We accept payments via WhatsApp Pay and bank transfer."
         },
         {
-            que: "Crafting is the art of turning ordinary objects into extraordinary things",
-            ans: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non ipsa aspernatur ration"
+            que: "How long does it take to process my order?",
+            ans: "Orders are processed promptly during business hours. You'll receive confirmation and delivery details upon payment."
+        },
+        {
+            que: "Can I track my order?",
+            ans: "Yes, we provide tracking information once your order is shipped."
+        },
+        {
+            que: " Do you ship internationally?",
+            ans: "Yes, we offer international shipping. Costs and delivery times vary."
+        },
+        {
+            que: " How can I contact customer support?",
+            ans: "Reach us on WhatsApp at [WhatsApp number] or through our Contact Us page."
+        },
+        {
+            que: "What payment methods are accepted via WhatsApp?",
+            ans: "We accept payments via WhatsApp Pay, bank transfer, and other convenient methods. Our team will provide payment instructions once you confirm your order details."
+        },
+        {
+            que: "Can I modify or cancel my order?",
+            ans: "Please contact us through WhatsApp as soon as possible if you need to modify or cancel your order. We'll assist you based on the order status."
         },
     ];
     const [currentFaq, setCurrentFaq] = React.useState(faqs);
@@ -49,7 +69,7 @@ export default function Faq() {
                         borderTop: "none",
                         borderRadius: '.4rem',
                         p: 1,
-                        bgcolor: '#212121',
+                        bgcolor: '#282828',
                         color: '#fff'
                     },
                     "& .MuiPaper-root.MuiAccordion-root.Mui-expanded": {

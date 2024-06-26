@@ -2,16 +2,19 @@ import { reviews } from "../utils/data";
 import { keyframes } from "@emotion/react";
 import Box from '@mui/material/Box';
 import { Typography } from '@mui/material';
+
 const CustomerReview = () => {
     const scrollX = keyframes`
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  `;
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    `;
+
     const duplicateClients = [...reviews, ...reviews];
+
     return (
         <Box sx={{
             display: "flex",
@@ -30,31 +33,28 @@ const CustomerReview = () => {
                 gap: '2rem',
                 justifyContent: 'center',
                 py: '4rem',
-                animation: [
-                    `${scrollX} 15s linear infinite`,
-                    `${scrollX} 18s linear infinite`,
-                    `${scrollX} 30s linear infinite`,
-                ],
+                animation: `${scrollX} 140s linear infinite`, // Adjust animation duration here (e.g., 60s)
             }}>
                 {duplicateClients.map((review, index) => (
                     <Box key={index} sx={{
-                        width: ['20rem', '20rem', '35rem',],
+                        width: ['20rem', '20rem', '30rem'],
                         bgcolor: 'white',
                         borderRadius: '24px',
-                        px: ['1rem', '3rem'],
+                        px: ['1rem', '2.5rem'],
                         py: '2rem',
-                        boxShadow: 3
+                        boxShadow: 3,
+                        transition: 'transform 20s ease-in-out', // Optional smooth transition effect
                     }}>
-                        <Box sx={{ display: 'flex', justifyContent: 'center', my: ['0rem', '0rem', '1rem'] }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'center', my: ['0rem', '0rem', '0.5rem'] }}>
                             <img src={review.img} alt="customer" style={{ width: '5rem', height: '5rem', borderRadius: '100%' }} />
                         </Box>
                         <Box sx={{ textAlign: 'center', mt: ['5px', '3px', '0px'] }}>
-                            <Typography>{review.name}</Typography>
+                            <Typography sx={{ fontWeight: '600', fontSize: ['1rem', '1.3rem'] }}>{review.name}</Typography>
                         </Box>
-                        <Box>
-                            <img src="/double-quotes.svg" alt="quotes" className='w-fit h-fit ' />
+                        <Box sx={{ mt: '-1.5rem' }}>
+                            <img src="/double-quotes.svg" alt="quotes" className='w-fit h-fit' />
                         </Box>
-                        <Typography sx={{ mt: ['0.5rem'], ml: 0.5, textWrap: 'wrap' }}>
+                        <Typography sx={{ mt: ['0.5rem'], ml: 0.5, textWrap: 'wrap', fontSize: ['1rem', '1.1rem'] }}>
                             {review.description}
                         </Typography>
                     </Box>
@@ -64,4 +64,4 @@ const CustomerReview = () => {
     )
 }
 
-export default CustomerReview
+export default CustomerReview;

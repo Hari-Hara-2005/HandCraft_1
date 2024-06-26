@@ -6,25 +6,38 @@ import { motion } from 'framer-motion';
 import Title from './components/Title';
 import CustomerReview from './components/CustomerReview'
 import Faq from './components/Faq';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import StickyWhatsapp from './components/StickyWhatsapp';
+import Navbar from './components/Navbar';
 const Hero = () => {
   return (
     <>
-      {/* Hero Section */}
       <Navbar />
+      <StickyWhatsapp link={"https://wa.me/916369842254"} />
+      {/* Hero Section */}
       <Box className="hero_bg" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <Box>
           <Typography sx={{
             fontSize: ['2.4rem', '4.5rem',],
             fontFamily: "cursive",
             fontWeight: '600',
-            color: '#543310',
+            color: '#212121',
             textAlign: 'center'
           }}>Maha's Lettering</Typography>
 
-          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5,px:1, color: 'white', mb: '5rem' }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
+          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5, px: 1, color: 'white', mb: '5rem' }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <Typography sx={{
+              fontSize: ['1.5rem', '1.5rem', '2.5rem'],
+              fontWeight: '600',
+              color: 'white',
+              bgcolor: 'transparent',
+              textAlign: 'center',
+              display: 'flex',
+              color: '#fff'
+            }}>
+              We Provide&nbsp;
+            </Typography>
             <FlipWordsDemo />
           </Box>
         </Box>
@@ -314,7 +327,7 @@ const Hero = () => {
         </Box >
         {/* Customer Review Section */}
         <Box >
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
             <Title>Read our customers say</Title>
           </Box>
           <CustomerReview />
