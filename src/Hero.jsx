@@ -38,7 +38,7 @@ const Hero = () => {
             }}>
               We Provide&nbsp;
             </Typography>
-            <FlipWordsDemo />
+            {/* <FlipWordsDemo /> */}
           </Box>
         </Box>
       </Box>
