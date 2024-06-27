@@ -13,9 +13,9 @@ const Hero = () => {
   return (
     <>
       <Navbar />
-      <StickyWhatsapp link={"https://wa.me/916369842254"} />
+      <StickyWhatsapp link={"https://wa.me/8220570301"} />
       {/* Hero Section */}
-      <Box className="hero_bg" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+      <Box className="hero_bg" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', overflow: 'hidden' }}>
         <Box>
           <Typography sx={{
             fontSize: ['2.4rem', '4.5rem',],
@@ -26,19 +26,19 @@ const Hero = () => {
           }}>Maha's Lettering</Typography>
 
           <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5, px: 1, color: 'white', mb: '5rem' }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box sx={{ display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
             <Typography sx={{
               fontSize: ['1.5rem', '1.5rem', '2.5rem'],
               fontWeight: '600',
               color: 'white',
               bgcolor: 'transparent',
               textAlign: 'center',
-              display: 'flex',
-              color: '#fff'
+              color: '#fff',
+              display: "flex",
             }}>
               We Provide&nbsp;
             </Typography>
-            {/* <FlipWordsDemo /> */}
+            <FlipWordsDemo />
           </Box>
         </Box>
       </Box>
