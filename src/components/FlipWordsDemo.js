@@ -13,7 +13,7 @@ export function FlipWordsDemo() {
             bgcolor: 'transparent',
             textAlign: 'center',
             display: 'flex',
-            color: '#282828'
+            color: '#fff'
         }}>
             <FlipWords words={words} />
         </Typography>

@@ -4,13 +4,17 @@ import StickyWhatsapp from './components/StickyWhatsapp'
 import Navbar from './components/Navbar'
 import { TextGenerateEffectDemo } from './components/TextGenerateEffectDemo'
 import Footer from './components/Footer'
+import CountUp from 'react-countup';
 const About = () => {
     return (
         <>
             <Navbar />
             <StickyWhatsapp link={"https://wa.me/8220570301"} />
             {/* Hero Section */}
-            <Box sx={{ display: 'flex', bgcolor: '#181818', justifyContent: 'center', alignItems: 'center', height: '100vh', overflow: 'hidden' }}>
+            <Box className="hero_bg" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', overflow: 'hidden' }}>
+                <video autoPlay muted loop>
+                    <source src="/201736-916310642.mp4" type="video/mp4" />
+                </video>
                 <Box >
                     <Typography sx={{
                         fontSize: ['2.4rem', '4.5rem',],
@@ -43,18 +47,39 @@ const About = () => {
                             <Typography sx={{ fontWeight: '600', fontSize: ['1rem', '1.3rem'], letterSpacing: 1, mt: 1.5 }}>Name</Typography></Box>
                     </Box>
                 </Box>
-                <Box sx={{ display: 'flex', justifyContent: ['center', 'space-around', 'space-between'], width: ['100%', '100%', '60%'], color: 'white', px: [3, 0, 15], flexDirection: ['column', 'row'] }}>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        justifyContent: ['center', 'space-around', 'space-between'],
+                        width: ['100%', '100%', '60%'],
+                        color: 'white',
+                        px: [3, 0, 15],
+                        flexDirection: ['column', 'row']
+                    }}
+                >
                     <Box>
-                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.5rem', '1.5rem'], letterSpacing: 1, }}>Products:</Typography>
-                        <Typography sx={{ fontWeight: '600', fontSize: ['1.3rem', '1.3rem'], mt: 1, letterSpacing: 1, }}>50+</Typography>
+                        <Typography sx={{ fontWeight: '600', fontSize: ['1.5rem', '2rem'], mt: 1, letterSpacing: 1 }}>
+                            <CountUp end={50} duration={5} />+
+                        </Typography>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.3rem', '1.3rem'], letterSpacing: 1 }}>
+                            Products
+                        </Typography>
                     </Box>
                     <Box>
-                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.5rem', '1.5rem'], mt: [2, 0], letterSpacing: 1, }}>Selling Products:</Typography>
-                        <Typography sx={{ fontWeight: '600', fontSize: ['1.3rem', '1.3rem'], mt: 1, letterSpacing: 1, }}>300+</Typography>
+                        <Typography sx={{ fontWeight: '600', fontSize: ['1.5rem', '2rem'], mt: [2, 0], letterSpacing: 1 }}>
+                            <CountUp end={300} duration={5} />+
+                        </Typography>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.3rem', '1.3rem'], letterSpacing: 1 }}>
+                            Selling Products
+                        </Typography>
                     </Box>
                     <Box>
-                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.5rem', '1.5rem'], mt: [2, 0], letterSpacing: 1, }}>Happy Customers:</Typography>
-                        <Typography sx={{ fontWeight: '600', fontSize: ['1.3rem', '1.3rem'], mt: 1, letterSpacing: 1, }}>200+</Typography>
+                        <Typography sx={{ fontWeight: '600', fontSize: ['1.5rem', '2rem'], mt: [2, 0], letterSpacing: 1 }}>
+                            <CountUp end={200} duration={5} />+
+                        </Typography>
+                        <Typography sx={{ fontWeight: 'bold', fontSize: ['1.3rem', '1.3rem'], letterSpacing: 1 }}>
+                            Happy Customers
+                        </Typography>
                     </Box>
                 </Box>
                 <Footer />
