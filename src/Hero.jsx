@@ -28,7 +28,7 @@ const Hero = () => {
             textAlign: 'center'
           }}>Maha's Lettering</Typography>
 
-          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem'], fontWeight: 'bold', my: 1.5, px: 1, color: 'white', mb: '5rem', }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
+          <Typography sx={{ textAlign: 'center', fontSize: ['1rem', '1.4rem', '2rem'], fontWeight: 'bold', my: 1.5, px: 1, color: 'white', mb: '5rem', }}>Crafting is the art of turning ordinary objects into extraordinary things</Typography>
           <Box sx={{ display: 'flex', justifyContent: 'center', overflow: 'hidden' }}>
             <Typography sx={{
               fontSize: ['1.5rem', '1.5rem', '2.5rem'],

@@ -53,7 +53,7 @@ export default function Navbar() {
             name: "About",
         },
         {
-            link: "/contact-us",
+            link: "/contact",
             name: "Contact Us",
         },
     ];
