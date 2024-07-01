@@ -328,6 +328,10 @@ const Hero = () => {
             </Box >
           </Box>
         </Box >
+        {/* Booking Process */}
+        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <img src='/booking.png' style={{ width: '75rem', height: '32rem' }} />
+        </Box>
         {/* Customer Review Section */}
         <Box >
           <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
