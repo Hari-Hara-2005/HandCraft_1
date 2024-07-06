@@ -45,7 +45,7 @@ export default function Navbar() {
             name: "Home",
         },
         {
-            link: "/about",
+            link: "/product",
             name: "Product",
         },
         {
