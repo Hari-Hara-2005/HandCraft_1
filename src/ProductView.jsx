@@ -4,6 +4,7 @@ import StickyWhatsapp from './components/StickyWhatsapp';
 import Navbar from './components/Navbar';
 import { motion } from 'framer-motion';
 import ProductGrid from './components/Product';
+import Footer from './components/Footer';
 const ProductView = () => {
     const textAni = {
         offscreen: { y: 20, opacity: 0 },
@@ -60,12 +61,13 @@ const ProductView = () => {
                             lineHeight: 1.5
                         }}
                     >
-                        Welcome to Maha's Lettering, where every creation tells a story through craftsmanship and creativity. Discover personalized gifts and unique decor that inspire and delight.
+                        Welcome to Maha's Lettering! Discover personalized gifts and unique decor crafted with creativity and care. Find the perfect piece that inspires and delights.
                     </Typography>
                 </Box>
             </Box>
-            <Box sx={{ bgcolor: '#181818'}}>
+            <Box sx={{ bgcolor: '#181818' }}>
                 <ProductGrid />
+                <Footer />
             </Box>
         </>
     )

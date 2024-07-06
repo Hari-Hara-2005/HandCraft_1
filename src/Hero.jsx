@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box'
-import { Typography } from '@mui/material'
+import { Button, Typography } from '@mui/material'
 import { FlipWordsDemo } from './components/FlipWordsDemo'
 import { motion } from 'framer-motion';
 import Title from './components/Title';
@@ -9,6 +9,31 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 import StickyWhatsapp from './components/StickyWhatsapp';
 import Navbar from './components/Navbar';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import { keyframes } from '@emotion/react';
+
+
+const bounceAnimation = keyframes`
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+`;
+
+const scrollAnimation = keyframes`
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
 const Hero = () => {
   return (
     <>
@@ -45,15 +70,24 @@ const Hero = () => {
           </Box>
         </Box>
       </Box>
+      {/* <Button
+        href="#next-section"
+        sx={{
+          animation: `${bounceAnimation} 2s infinite`,
+        }}
+      >
+        <KeyboardArrowDownIcon fontSize="large" />
+      </Button> */}
 
       {/* Best Selling */}
-      <Box sx={{ bgcolor: '#181818' }}>
+      <Box  sx={{ bgcolor: '#181818' }}>
         {/* <Box>
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Title>Best Selling</Title>
           </Box>
         </Box> */}
         {/* Our Work Section */}
+        <section id='next-section'>
         <Box
           py={{ xs: 3, md: 5, }}
           sx={{
@@ -328,10 +362,11 @@ const Hero = () => {
             </Box >
           </Box>
         </Box >
+        </section>
         {/* Booking Process */}
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+        {/* <Box sx={{ display: 'flex', justifyContent: 'center' }}>
           <img src='/booking.png' style={{ width: '75rem', height: '32rem' }} />
-        </Box>
+        </Box> */}
         {/* Customer Review Section */}
         <Box >
           <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
