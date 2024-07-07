@@ -125,7 +125,7 @@ const products = [
     name: 'Alphabet Gem Keychain',
     rating: 4,
     price: '₹100',
-    image: '/keychain-1.jpg',
+    image: '/keychain-7.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -185,7 +185,7 @@ const products = [
     name: 'Mystic Letter Keychain',
     rating: 4,
     price: '₹100',
-    image: '/keychain-7.jpg',
+    image: '/keychain-1.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -226,6 +226,66 @@ const products = [
     rating: 4,
     price: '₹100',
     image: '/photo-1.jpg',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 23,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/photofarme.png',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 24,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/photoframe-1.png',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 25,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/photoframe-2.png',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 26,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/photoframe-3.png',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 27,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/frame.jpg',
+    unitsSold: 6347,
+    daysLeft: 21,
+  },
+  {
+    id: 28,
+    category: 'Photoframe',
+    name: 'Personalized Photo Charm',
+    rating: 4,
+    price: '₹100',
+    image: '/frame-2.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -332,6 +392,7 @@ const ProductGrid = () => {
   const [visibleEarringsCount, setVisibleEarringsCount] = useState(3);
   const [visibleKeychainCount, setVisibleKeychainCount] = useState(3);
   const [visiblePhotoCount, setVisiblePhotoCount] = useState(3);
+  const [visiblePhotoframeCount, setVisiblePhotoframeCount] = useState(3);
   const handleShowMoreBangles = () => {
     setVisibleBanglesCount((prevCount) => prevCount + 3);
   };
@@ -363,10 +424,20 @@ const ProductGrid = () => {
   const handleShowLessPhoto = () => {
     setVisiblePhotoCount((prevCount) => (prevCount - 3 > 3 ? prevCount - 3 : 3));
   };
+
+
+  const handleShowMorePhotoframe = () => {
+    setVisiblePhotoframeCount((prevCount) => prevCount + 3);
+  };
+
+  const handleShowLessPhotoframe = () => {
+    setVisiblePhotoframeCount((prevCount) => (prevCount - 3 > 3 ? prevCount - 3 : 3));
+  };
   const bangles = products.filter(product => product.category === 'Bangles');
   const earrings = products.filter(product => product.category === 'Earrings');
   const keychain = products.filter(product => product.category === 'Keychain');
   const Photo = products.filter(product => product.category === 'Photo');
+  const Photoframe = products.filter(product => product.category === 'Photoframe');
   return (
     <Box sx={{ textAlign: 'center', px: [2, 3, 0] }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: [4, 5, 0] }}>
@@ -537,6 +608,50 @@ const ProductGrid = () => {
             borderColor: '#fff', // Ensure the outline remains white on hover
           },
         }} onClick={handleShowMorePhoto}>
+          Show More
+        </Button>
+      )}
+
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mb: [3, 5, 0] }}>
+        <Title>Photo Frame</Title>
+      </Box>
+      <Grid container spacing={6} justifyContent="center" alignItems="center">
+        {Photoframe.slice(0, visiblePhotoframeCount).map((product) => (
+          <Grid item key={product.id} xs={12} sm={6} md={3.5}>
+            <ProductCard product={product} />
+          </Grid>
+        ))}
+      </Grid>
+
+      {visiblePhotoframeCount > 3 && (
+        <Button variant="outlined" startIcon={<ArrowCircleLeftIcon />} sx={{
+          my: 4,
+          mx: 5,
+          textTransform: 'none',
+          fontWeight: 800,
+          color: '#fff',
+          background: '#282828',
+          borderColor: '#fff', // Set the outline color to white
+          '&:hover': {
+            borderColor: '#fff', // Ensure the outline remains white on hover
+          },
+        }} onClick={handleShowLessPhotoframe} >
+          Show Less
+        </Button>
+      )}
+      {visiblePhotoframeCount < Photo.length && (
+        <Button variant="outlined" endIcon={<ArrowCircleRightIcon />} sx={{
+          my: 4,
+          textTransform: 'none',
+          fontWeight: 800,
+          color: '#fff',
+          background: '#282828',
+          borderColor: '#fff', // Set the outline color to white
+          '&:hover': {
+            borderColor: '#fff', // Ensure the outline remains white on hover
+          },
+        }} onClick={handleShowMorePhotoframe}>
           Show More
         </Button>
       )}
