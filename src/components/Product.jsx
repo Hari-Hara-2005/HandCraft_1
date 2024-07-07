@@ -195,7 +195,7 @@ const products = [
     name: 'Picture Perfect Keychain',
     rating: 4,
     price: '₹100',
-    image: '/Photo-2.jpg',
+    image: '/photo-2.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -205,7 +205,7 @@ const products = [
     name: 'Memorable Moment Keychain',
     rating: 4,
     price: '₹100',
-    image: '/Photo-4.jpg',
+    image: '/photo-4.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -215,7 +215,7 @@ const products = [
     name: 'Capture Stone Keychain',
     rating: 4,
     price: '₹100',
-    image: '/Photo-3.jpg',
+    image: '/photo-3.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -225,7 +225,7 @@ const products = [
     name: 'Personalized Photo Charm',
     rating: 4,
     price: '₹100',
-    image: '/Photo-1.jpg',
+    image: '/photo-1.jpg',
     unitsSold: 6347,
     daysLeft: 21,
   },
@@ -246,6 +246,9 @@ const StyledCard = styled(Card)({
 
 const StyledMedia = styled(CardMedia)({
   height: 200,
+  objectFit: 'cover',
+  objectPosition: 'center',
+  width: '100%',
 });
 
 const IconContainer = styled(Box)({
