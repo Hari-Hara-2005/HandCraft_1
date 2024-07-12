@@ -5,8 +5,12 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const scrollToTop = () => {
+        window.scrollTo(0, 0)
+    }
     return (
         <Box data-aos="fade-up"
             data-aos-duration="3000" sx={{ mt: 10 }}>
@@ -55,18 +59,18 @@ const Footer = () => {
                                 <Typography sx={{ fontSize: '18px', fontFamily: 'sans-serif', fontWeight: '500', color: 'white', letterSpacing: 1 }}>
                                     Overview
                                 </Typography>
-                                <Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1 }}>
+                                <Link to="/" onClick={scrollToTop} style={{ textDecoration: 'none' }} ><Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1, "&:hover": { color: 'lightgray' } }}>
                                     Home
-                                </Typography>
-                                <Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1 }}>
+                                </Typography></Link>
+                                <Link to="/about" onClick={scrollToTop} style={{ textDecoration: 'none' }} ><Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1, "&:hover": { color: 'lightgray' } }}>
                                     About
-                                </Typography>
-                                <Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1 }}>
+                                </Typography></Link>
+                                <Link to="/product" onClick={scrollToTop} style={{ textDecoration: 'none' }} ><Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1, "&:hover": { color: 'lightgray' } }}>
                                     Product
-                                </Typography>
-                                <Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1 }}>
+                                </Typography></Link>
+                                <Link to="/contact" onClick={scrollToTop} style={{ textDecoration: 'none' }} ><Typography sx={{ fontSize: '15px', fontFamily: 'sans-serif', color: 'white', letterSpacing: 1, mt: 1, "&:hover": { color: 'lightgray' } }}>
                                     Contact Us
-                                </Typography>
+                                </Typography></Link>
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={6} lg={3}>
@@ -76,19 +80,19 @@ const Footer = () => {
                                 </Typography>
                                 <Box sx={{ mt: 2 }}>
                                     <Fab component='a'
-                                        href='https://wa.me/8220570301' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828' }}>
+                                        href='https://wa.me/8220570301' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828', "&:hover": { backgroundColor: 'gray' } }}>
                                         <WhatsAppIcon />
                                     </Fab>
                                     <Fab component='a'
-                                        href='https://www.instagram.com/mahaslettering?igsh=b21mbmJyY2hqd2Vo' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828' }}>
+                                        href='https://www.instagram.com/mahaslettering?igsh=b21mbmJyY2hqd2Vo' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828', "&:hover": { backgroundColor: 'gray' } }}>
                                         <InstagramIcon />
                                     </Fab>
                                     <Fab component='a'
-                                        href='https://www.facebook.com/mahalakshmi.shankaran.54?mibextid=ZbWKwL' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828' }}>
+                                        href='https://www.facebook.com/mahalakshmi.shankaran.54?mibextid=ZbWKwL' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828', "&:hover": { backgroundColor: 'gray' } }}>
                                         <FacebookIcon />
                                     </Fab>
                                     <Fab component='a'
-                                        href='https://www.threads.net/@mahaslettering' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828' }}>
+                                        href='https://www.threads.net/@mahaslettering' sx={{ backgroundColor: 'white', mx: 0.5, color: '#282828', "&:hover": { backgroundColor: 'gray' } }}>
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             shape-rendering="geometricPrecision"
                                             text-rendering="geometricPrecision"

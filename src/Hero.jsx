@@ -9,7 +9,6 @@ import Faq from './components/Faq';
 import Footer from './components/Footer';
 import StickyWhatsapp from './components/StickyWhatsapp';
 import Navbar from './components/Navbar';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { keyframes } from '@emotion/react';
 
 
@@ -364,11 +363,13 @@ const Hero = () => {
           </Box >
         </section>
         {/* Booking Process */}
-        <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
-          <Title>Booking Process</Title>
-        </Box>
-        <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-          <img src='/booking.png' style={{ width: '100%',height:'fit' }} />
+        <Box>
+          <Box sx={{ display: 'flex', justifyContent: 'center', px: 2 }}>
+            <Title>Booking Process</Title>
+          </Box>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+            <img src='/booking.png' style={{ width: '100%', height: 'fit' }} />
+          </Box>
         </Box>
         {/* Customer Review Section */}
         <Box >
