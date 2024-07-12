@@ -124,7 +124,7 @@ const products = [
     category: 'Keychain',
     name: 'Alphabet Gem Keychain',
     rating: 5,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-7.jpg',
     unitsSold: 55,
     daysLeft: 21,
@@ -132,9 +132,9 @@ const products = [
   {
     id: 13,
     category: 'Keychain',
-    name: 'Alphabet Gem Keychains',
+    name: 'Memorable Keychains',
     rating: 4,
-    price: '₹150',
+    price: '₹100',
     image: '/keychain-2.jpg',
     unitsSold: 52,
     daysLeft: 21,
@@ -144,7 +144,7 @@ const products = [
     category: 'Keychain',
     name: 'Initial Spark Keychain',
     rating: 4,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-3.jpg',
     unitsSold: 50,
     daysLeft: 21,
@@ -154,7 +154,7 @@ const products = [
     category: 'Keychain',
     name: 'Personalized Stone Keychain',
     rating: 3,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-4.jpg',
     unitsSold: 40,
     daysLeft: 21,
@@ -164,7 +164,7 @@ const products = [
     category: 'Keychain',
     name: 'Gemstone Initial Keychain',
     rating: 3,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-5.jpg',
     unitsSold: 38,
     daysLeft: 21,
@@ -174,7 +174,7 @@ const products = [
     category: 'Keychain',
     name: 'Letter Glow Keychain',
     rating: 3,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-6.jpg',
     unitsSold: 35,
     daysLeft: 21,
@@ -184,7 +184,7 @@ const products = [
     category: 'Keychain',
     name: 'Mystic Letter Keychain',
     rating: 3,
-    price: '₹150',
+    price: '₹80',
     image: '/keychain-1.jpg',
     unitsSold: 30,
     daysLeft: 21,
@@ -194,7 +194,7 @@ const products = [
     category: 'Photo',
     name: 'Picture Perfect Keychain',
     rating: 5,
-    price: '₹150',
+    price: '₹180',
     image: '/photo-2.jpg',
     unitsSold: 30,
     daysLeft: 21,
@@ -204,7 +204,7 @@ const products = [
     category: 'Photo',
     name: 'Memorable Moment Keychain',
     rating: 4,
-    price: '₹150',
+    price: '₹180',
     image: '/photo-4.jpg',
     unitsSold: 27,
     daysLeft: 21,
@@ -214,7 +214,7 @@ const products = [
     category: 'Photo',
     name: 'Capture Stone Keychain',
     rating: 4,
-    price: '₹150',
+    price: '₹180',
     image: '/photo-3.jpg',
     unitsSold: 25,
     daysLeft: 21,
@@ -224,7 +224,7 @@ const products = [
     category: 'Photo',
     name: 'Personalized Photo Charm',
     rating: 3,
-    price: '₹150',
+    price: '₹180',
     image: '/photo-1.jpg',
     unitsSold: 15,
     daysLeft: 21,
@@ -232,9 +232,9 @@ const products = [
   {
     id: 23,
     category: 'Photoframe',
-    name: 'Personalized Photo Charm',
+    name: 'Timeless Treasures Frames',
     rating: 5,
-    price: '₹100',
+    price: '₹1000',
     image: '/photofarme.png',
     unitsSold: 20,
     daysLeft: 21,
@@ -242,9 +242,9 @@ const products = [
   {
     id: 24,
     category: 'Photoframe',
-    name: 'Personalized Photo Charm',
+    name: "Nature's Embrance Frames",
     rating: 4,
-    price: '₹100',
+    price: '₹800',
     image: '/photoframe-1.png',
     unitsSold: 25,
     daysLeft: 21,
@@ -254,7 +254,7 @@ const products = [
     category: 'Photoframe',
     name: 'Personalized Photo Charm',
     rating: 4,
-    price: '₹100',
+    price: '₹500',
     image: '/photoframe-2.png',
     unitsSold: 15,
     daysLeft: 21,
@@ -262,9 +262,9 @@ const products = [
   {
     id: 26,
     category: 'Photoframe',
-    name: 'Personalized Photo Charm',
+    name: 'FrameCraft Creations',
     rating: 4,
-    price: '₹100',
+    price: '₹300',
     image: '/photoframe-3.png',
     unitsSold: 20,
     daysLeft: 21,
@@ -272,9 +272,9 @@ const products = [
   {
     id: 27,
     category: 'Photoframe',
-    name: 'Personalized Photo Charm',
+    name: 'Momentous Frames',
     rating: 4,
-    price: '₹100',
+    price: '₹850',
     image: '/frame.jpg',
     unitsSold: 30,
     daysLeft: 21,
@@ -282,10 +282,40 @@ const products = [
   {
     id: 28,
     category: 'Photoframe',
-    name: 'Personalized Photo Charm',
+    name: 'Vintage Bliss Frames',
     rating: 4,
-    price: '₹100',
+    price: '₹500',
     image: '/frame-2.jpg',
+    unitsSold: 35,
+    daysLeft: 21,
+  },
+  {
+    id: 29,
+    category: 'Explosionbox',
+    name: 'Personalized Explosion Box',
+    rating: 4,
+    price: '₹800',
+    image: '/box-1.jpg',
+    unitsSold: 35,
+    daysLeft: 21,
+  },
+  {
+    id: 30,
+    category: 'Explosionbox',
+    name: 'Capture Stone Explosion Box',
+    rating: 4,
+    price: '₹800',
+    image: '/box-2.jpg',
+    unitsSold: 35,
+    daysLeft: 21,
+  },
+  {
+    id: 31,
+    category: 'Explosionbox',
+    name: 'Memorable Moment Explosion Box',
+    rating: 4,
+    price: '₹500',
+    image: '/box-3.jpg',
     unitsSold: 35,
     daysLeft: 21,
   },
@@ -438,6 +468,7 @@ const ProductGrid = () => {
   const keychain = products.filter(product => product.category === 'Keychain');
   const Photo = products.filter(product => product.category === 'Photo');
   const Photoframe = products.filter(product => product.category === 'Photoframe');
+  const Explosionbox = products.filter(product => product.category === 'Explosionbox');
   return (
     <Box sx={{ textAlign: 'center', px: [2, 3, 0] }}>
       <Box sx={{ display: 'flex', justifyContent: 'center', mb: [4, 5, 0] }}>
@@ -655,6 +686,17 @@ const ProductGrid = () => {
           Show More
         </Button>
       )}
+
+      <Box sx={{ display: 'flex', justifyContent: 'center', mb: [3, 5, 0] }}>
+        <Title>Explosion Box</Title>
+      </Box>
+      <Grid container spacing={6} justifyContent="center" alignItems="center">
+        {Explosionbox.slice().map((product) => (
+          <Grid item key={product.id} xs={12} sm={6} md={3.5}>
+            <ProductCard product={product} />
+          </Grid>
+        ))}
+      </Grid>
     </Box>
   );
 };
