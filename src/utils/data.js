@@ -50,7 +50,7 @@ export const reviews = [
     {
         id: 9,
         img: '/images.png',
-        description: "Wonderful experience! The whole process was seamless, from ordering to delivery.",
+        description: "Wonderful experience! The whole process was seamless, from ordering to delivery.It's beautifully crafted and made a perfect gift.",
         name: "Aravindh",
     },
     {

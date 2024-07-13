@@ -17,7 +17,6 @@ const products = [
     price: '₹800',
     image: '/bengel-6.jpeg',
     unitsSold: '50',
-    daysLeft: 27,
   },
   {
     id: 2,
@@ -27,7 +26,6 @@ const products = [
     price: '₹800',
     image: '/bengel-2.jpg',
     unitsSold: 45,
-    daysLeft: 24,
   },
   {
     id: 3,
@@ -37,7 +35,6 @@ const products = [
     price: '₹800',
     image: '/bengel-5.jpeg',
     unitsSold: 43,
-    daysLeft: 21,
   },
   {
     id: 4,
@@ -47,7 +44,6 @@ const products = [
     price: '₹800',
     image: '/bengel-1.jpg',
     unitsSold: 25,
-    daysLeft: 27,
   },
   {
     id: 5,
@@ -57,7 +53,6 @@ const products = [
     price: '₹800',
     image: '/bengel-7.jpeg',
     unitsSold: 20,
-    daysLeft: 24,
   },
   {
     id: 6,
@@ -67,7 +62,6 @@ const products = [
     price: '₹800',
     image: '/bengel-3.jpg',
     unitsSold: 20,
-    daysLeft: 21,
   },
   {
     id: 7,
@@ -77,7 +71,6 @@ const products = [
     price: '₹800',
     image: '/bengel-8.jpg',
     unitsSold: 15,
-    daysLeft: 27,
   },
   {
     id: 8,
@@ -87,7 +80,6 @@ const products = [
     price: '₹100',
     image: '/hearing-3.jpg',
     unitsSold: 45,
-    daysLeft: 24,
   },
   {
     id: 9,
@@ -97,7 +89,6 @@ const products = [
     price: '₹100',
     image: '/hearing-2.jpg',
     unitsSold: 42,
-    daysLeft: 21,
   },
   {
     id: 10,
@@ -107,7 +98,6 @@ const products = [
     price: '₹100',
     image: '/hearing-1.jpg',
     unitsSold: 40,
-    daysLeft: 21,
   },
   {
     id: 11,
@@ -117,7 +107,6 @@ const products = [
     price: '₹100',
     image: '/hearing-4.jpg',
     unitsSold: 20,
-    daysLeft: 21,
   },
   {
     id: 12,
@@ -127,7 +116,6 @@ const products = [
     price: '₹80',
     image: '/keychain-7.jpg',
     unitsSold: 55,
-    daysLeft: 21,
   },
   {
     id: 13,
@@ -137,7 +125,6 @@ const products = [
     price: '₹100',
     image: '/keychain-2.jpg',
     unitsSold: 52,
-    daysLeft: 21,
   },
   {
     id: 14,
@@ -147,7 +134,6 @@ const products = [
     price: '₹80',
     image: '/keychain-3.jpg',
     unitsSold: 50,
-    daysLeft: 21,
   },
   {
     id: 15,
@@ -157,7 +143,6 @@ const products = [
     price: '₹80',
     image: '/keychain-4.jpg',
     unitsSold: 40,
-    daysLeft: 21,
   },
   {
     id: 16,
@@ -167,7 +152,6 @@ const products = [
     price: '₹80',
     image: '/keychain-5.jpg',
     unitsSold: 38,
-    daysLeft: 21,
   },
   {
     id: 17,
@@ -177,7 +161,6 @@ const products = [
     price: '₹80',
     image: '/keychain-6.jpg',
     unitsSold: 35,
-    daysLeft: 21,
   },
   {
     id: 18,
@@ -187,7 +170,6 @@ const products = [
     price: '₹80',
     image: '/keychain-1.jpg',
     unitsSold: 30,
-    daysLeft: 21,
   },
   {
     id: 19,
@@ -197,7 +179,6 @@ const products = [
     price: '₹180',
     image: '/photo-2.jpg',
     unitsSold: 30,
-    daysLeft: 21,
   },
   {
     id: 20,
@@ -207,7 +188,6 @@ const products = [
     price: '₹180',
     image: '/photo-4.jpg',
     unitsSold: 27,
-    daysLeft: 21,
   },
   {
     id: 21,
@@ -217,7 +197,6 @@ const products = [
     price: '₹180',
     image: '/photo-3.jpg',
     unitsSold: 25,
-    daysLeft: 21,
   },
   {
     id: 22,
@@ -227,7 +206,6 @@ const products = [
     price: '₹180',
     image: '/photo-1.jpg',
     unitsSold: 15,
-    daysLeft: 21,
   },
   {
     id: 23,
@@ -237,7 +215,6 @@ const products = [
     price: '₹1000',
     image: '/photofarme.png',
     unitsSold: 20,
-    daysLeft: 21,
   },
   {
     id: 24,
@@ -247,7 +224,6 @@ const products = [
     price: '₹800',
     image: '/photoframe-1.png',
     unitsSold: 25,
-    daysLeft: 21,
   },
   {
     id: 25,
@@ -257,7 +233,6 @@ const products = [
     price: '₹500',
     image: '/photoframe-2.png',
     unitsSold: 15,
-    daysLeft: 21,
   },
   {
     id: 26,
@@ -267,7 +242,6 @@ const products = [
     price: '₹300',
     image: '/photoframe-3.png',
     unitsSold: 20,
-    daysLeft: 21,
   },
   {
     id: 27,
@@ -277,7 +251,6 @@ const products = [
     price: '₹850',
     image: '/frame.jpg',
     unitsSold: 30,
-    daysLeft: 21,
   },
   {
     id: 28,
@@ -287,7 +260,6 @@ const products = [
     price: '₹500',
     image: '/frame-2.jpg',
     unitsSold: 35,
-    daysLeft: 21,
   },
   {
     id: 29,
@@ -296,8 +268,7 @@ const products = [
     rating: 4,
     price: '₹800',
     image: '/box-1.jpg',
-    unitsSold: 35,
-    daysLeft: 21,
+    unitsSold: 25,
   },
   {
     id: 30,
@@ -306,8 +277,7 @@ const products = [
     rating: 4,
     price: '₹800',
     image: '/box-2.jpg',
-    unitsSold: 35,
-    daysLeft: 21,
+    unitsSold: 22,
   },
   {
     id: 31,
@@ -316,8 +286,7 @@ const products = [
     rating: 4,
     price: '₹500',
     image: '/box-3.jpg',
-    unitsSold: 35,
-    daysLeft: 21,
+    unitsSold: 30,
   },
 ];
 
@@ -334,12 +303,18 @@ const StyledCard = styled(Card)({
   position: 'relative'
 });
 
-const StyledMedia = styled(CardMedia)({
-  height: 200,
-  objectFit: 'cover',
-  objectPosition: 'center',
-  width: '100%',
-});
+const StyledMedia = styled(CardMedia)`
+  height: 200px; /* Default height for mobile devices */
+
+  @media (min-width: 600px) {
+    /* Adjust height for larger devices (like tablets and desktops) */
+    height: 400px;
+  }
+
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+`;
 
 const IconContainer = styled(Box)({
   position: 'absolute',
@@ -402,12 +377,9 @@ const ProductCard = ({ product }) => {
             </Typography>
             <RatingStars rating={product.rating} size="1.2rem" />
           </Box>
-          <Box >
+          <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Typography variant="body2" color="gray">
               {product.unitsSold} units sold
-            </Typography>
-            <Typography variant="body2" color="gray" sx={{ py: 1 }} >
-              {product.daysLeft} days left
             </Typography>
           </Box>
         </Stack>
